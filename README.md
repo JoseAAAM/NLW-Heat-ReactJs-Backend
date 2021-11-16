@@ -32,7 +32,7 @@ Aplicação Web desenvolvida na NLW 07 criada para compartilhar comentarios refe
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através do [Figma](<https://www.figma.com/file/7vGTdjrvH68UN28MGXcPn6/%5BNLW-Heat---Mission%3A-Impulse%5D-DoWhile2021-(Community)?node-id=0%3A1>).
+Você pode visualizar o layout do projeto através do [Figma](https://www.figma.com/community/file/1031699316177416916).
 
 ## Executando o projeto
 
