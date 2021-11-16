@@ -43,11 +43,11 @@ Em seguida, inicie o projeto.
 yarn dev
 ```
 
-Lembre-se de criar o seu App na seção de developer settings do github e substituir o Client ID no arquivo auth.tsx, definir a Homepage URL como sendo http://localhost:<strong>"Porta definida para seu backend"</strong> e http://localhost:3000 que é a porta que esta aplicação está rodando.
+Lembre-se de criar o seu App na seção de developer settings do github e substituir o Client ID no arquivo auth.tsx, definir a Homepage URL como sendo http://localhost:<strong><a>"Porta definida para seu backend"</a></strong> e a Authorization callback URL definir como http://localhost:3000 que é a porta que a aplicação está rodando.
 
 **&copy; [Rocketseat](https://rocketseat.com.br/)**
 
-**Instrutor: [Diego Fernandes](hhttps://github.com/diego3g) | CTO Rocketseat**
+**Instrutor: [Diego Fernandes](https://github.com/diego3g) | CTO Rocketseat**
 
 ---
 
