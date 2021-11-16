@@ -1,18 +1,18 @@
-import { createContext, ReactNode, useEffect, useState } from "react";
+import { createContext, ReactNode, useEffect, useState } from 'react'
 
-import { api } from "../services/api";
+import { api } from '../services/api'
 
 type User = {
-  id: string;
-  name: string;
-  login: string;
-  avatar_url: string;
+  id: string
+  name: string
+  login: string
+  avatar_url: string
 }
 
 type AuthContextData = {
   user: User | null
-  signInUrl: string;
-  signOut: () => void;
+  signInUrl: string
+  signOut: () => void
 }
 
 type AuthProvider = {
@@ -20,12 +20,12 @@ type AuthProvider = {
 }
 
 type AuthResponse = {
-  token: string;
+  token: string
   user: {
-    id: string;
-    avatar_url: string;
-    name: string;
-    login: string;
+    id: string
+    avatar_url: string
+    name: string
+    login: string
   }
 }
 
@@ -38,7 +38,7 @@ export function AuthProvider(props: AuthProvider) {
 
   async function signIn(githubCode: string) {
     const response = await api.post<AuthResponse>('authenticate', {
-      code: githubCode,
+      code: githubCode
     })
 
     const { token, user } = response.data
@@ -61,7 +61,7 @@ export function AuthProvider(props: AuthProvider) {
     if (token) {
       api.defaults.headers.common.authorization = `Bearer ${token}`
 
-      api.get<User>('profile').then(response => {
+      api.get<User>('profile').then((response) => {
         setUser(response.data)
       })
     }
